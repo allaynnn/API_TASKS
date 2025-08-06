@@ -1,0 +1,113 @@
+TASK 1 
+
+İstifadəçidən yaşını soruşan proqram yazın və aşağıdakı şərtlərə əsasən mesaj çap et:
+
+Əgər yaş 18-dən böyükdürsə, ekrana "Boyuksen" cixsın.
+Əgər yaş 18-dən kiçikdirsə, ekrana "Sen hele usaqsan".
+Əgər yaş dəqiq 18-dirsə, ekrana "Gencsen".
+
+
+
+TASK 2
+
+Car sinfi yarat
+Aşağıdakı xüsusiyyətlərə malik sadə bir Car (Maşın) sinfi yarat:
+Tələblər:
+Car adlı sinif yarat.
+Bu sinfin aşağıdakı xüsusiyyətləri (atributları) olsun:
+brand (marka)
+model
+year (il)
+Car sinfinin içində start_engine() adlı bir metod yaz, o sadəcə ekrana yazsın:
+
+"Engine started for [brand] [model]"
+✅ Nümunə istifadə:
+my_car = Car("Toyota", "Corolla", 2020)
+my_car.start_engine()
+
+
+
+
+TASK 4
+
+Tapşırıq: "Pişik" Sinifi Yaratmaq
+ Bir "Pişik" sinifi yarat. Bu sinifin aşağıdakı xüsusiyyətləri olmalıdır:
+Pişiyin adı (name)
+Yaşı (age)
+Cinsi (breed)
+Rəngi (color)
+              Sinifin metodları:
+meow() – Pişiyin miyavlamasını simulyasiya edir. Məsələn: "Miyav! Mənim adım Whiskers."
+eat() – Pişiyin yemək yediğini bildirir.
+play() – Pişiyin oynadığını bildirir.
+                 Göstərişlər:
+Cat adlı bir sinif yaradın.
+Sinifin konstruktorunda name, age, breed və color atributlarını təyin edin.
+meow(), eat() və play() metodlarını yaradın.
+(Ən azı iki pişik obyekti yaradın və onların metodlarını çağırın.)
+
+
+
+TASK 5
+
+SchoolMember adlı sinif yarat.
+Private atributlar: __name, __role (məsələn: "Teacher" / "Student")
+Public atribut olar bilər age.
+Bu atributlar üçün getter/setter metodları yaz (get_name, set_name, get_role, set_role, get_age, set_age).
+age üçün age >= 5 olmalıdır; yoxsa "Invalid age" mesajı verilsin.
+SchoolMember-dan Teacher və Student adlı alt siniflər yarat.
+Hər alt sinifdə introduce() metodu olmalıdır:
+Teacher üçün: “Mən müəlliməm. Adım {name}, yaşım {age}.”
+Student üçün: “Mən tələbəyəm. Adım {name}, yaşım {age}.”
+SchoolMember sinifində də default introduce() metodu olmalıdır: “Mən məktəb üzvüyəm.”
+
+
+
+
+
+
+
+
+TASK 6
+
+1.  Boş bir list yarat. 
+2.  Boş list daxilinə 6 element əlavə et. 
+3.  Bütün elementləri 2 sətr kod ilə çap et. 
+4.  3-cü elementi çap et 
+5.  Sonuncu elementi sil və qaytar.
+
+
+
+TO-DO List Mini APP
+
+GET - GET all tasks from json file (dictionaries in list)
+POST - ADD new task to json file (dictionaries in list)
+PUT - UPDATE a task based on key (Keys of all tasks should be unique)
+DELETE - DELETE a task based on key.
+
+Search about:
+1. How to open and write a file in Python (with open and standart open)
+2. Flask route and endpoint management
+3. Route parametrs ("todo-list / {key}"). Get element by key
+4. File-based database has to contain dictionaries with key value pairs inside list
+[
+    {Monday: Running},
+    {Tuesday: Studing},
+    . . .
+]
+
+
+
+TASK 7 :
+ Encapsulation
+Tapşırıq: BankAccount adlı bir sinif yarat. Bu sinifdə aşağıdakı xüsusiyyətlər və metodlar olsun:
+Özəl atributlar:
+__balance (başlanğıcda 0 olmalıdır)
+İctimai metodlar:
+deposit(amount) — müsbət məbləğ əlavə edir
+withdraw(amount) — balansda kifayət qədər pul varsa çıxarır
+get_balance() — balansı göstərir
+Şərtlər:
+__balance dəyişəni birbaşa çöldən dəyişdirilə bilməz (yəni account.__balance = 1000 işləməməlidir).
+Yanlış məbləğ daxil edilərsə (məsələn, mənfi məbləğ), metod xəbərdarlıq etsin.
+
