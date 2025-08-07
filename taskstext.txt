@@ -111,3 +111,125 @@ get_balance() — balansı göstərir
 __balance dəyişəni birbaşa çöldən dəyişdirilə bilməz (yəni account.__balance = 1000 işləməməlidir).
 Yanlış məbləğ daxil edilərsə (məsələn, mənfi məbləğ), metod xəbərdarlıq etsin.
 
+
+
+
+
+
+
+
+TASK 8
+Python-da Student adlı bir sinif yaradaraq tələbənin adını və qiymətini düzgün yoxlayan (validation) metodlarla idarə etmək.
+ Tələblər:
+ 1. Sinifin adı: Student
+ 2. Atributlar (xüsusiyyətlər):
+__name (string tipində) — tələbənin adı
+__grade (int və ya float) — tələbənin qiyməti
+(Standart olaraq 0 olmalıdır)
+ 3. Aşağıdakı metodları yaradın:
+✅ set_name(name) metodu:
+name string olmalıdır.
+name boş olmamalıdır ("" və ya yalnız boşluqlardan ibarət olmamalıdır).
+Əks halda:
+➤ Xəta: Ad düzgün formada olmalıdır mesajını çap et.
+✅ set_grade(grade) metodu:
+grade int və ya float olmalıdır.
+Qiymət 0 ilə 100 arasında olmalıdır (hər ikisi daxil).
+Əks halda:
+➤ Xəta: Qiymət 0 ilə 100 arasında olmalıdır mesajını çap et.
+✅ get_name() və get_grade() metodları:
+Məlumatları geri qaytarır (return).
+Nümunə İstifadə:
+student = Student()
+student.set_name("Aynur")
+student.set_grade(95)
+print(f"Tələbə adı: {student.get_name()}")
+print(f"Tələbənin qiyməti: {student.get_grade()}")
+Yanlış dəyərlərlə test:
+student.set_grade(150)     # Xəta: Qiymət 0 ilə 100 arasında olmalıdır
+student.set_name("")       # Xəta: Ad düzgün formada olmalıdır
+
+
+
+
+
+
+
+
+
+
+TASK 9TASK 11
+Bir ana sinifdən (Animal) miras alan alt siniflər (Dog, Cat) yaradaraq, OOP-də mirasın necə işlədiyini praktiki olaraq başa düşmək.
+Şərtlər:
+Animal adlı bir ana sinif (base class) yaradın:
+name adlı atributu olsun
+speak() adlı metod olsun → Animal səs çıxarır çap etsin
+Dog və Cat adlı iki alt sinif yaradın:
+Hər biri Animal sinifindən miras alsın
+speak() metodunu özlərinə uyğun şəkildə təkrar yazsın (override etsin):
+Dog → Hav-hav
+Cat → Miyov
+Hər iki heyvandan obyekt yaradın və speak() metodunu çağırın.
+Bir ana sinifdən (Animal) miras alan alt siniflər (Dog, Cat) yaradaraq, OOP-də mirasın necə işlədiyini praktiki olaraq başa düşmək.
+Şərtlər:
+Animal adlı bir ana sinif (base class) yaradın:
+name adlı atributu olsun
+speak() adlı metod olsun → Animal səs çıxarır çap etsin
+Dog və Cat adlı iki alt sinif yaradın:
+Hər biri Animal sinifindən miras alsın
+speak() metodunu özlərinə uyğun şəkildə təkrar yazsın (override etsin):
+Dog → Hav-hav
+Cat → Miyov
+Hər iki heyvandan obyekt yaradın və speak() metodunu çağırın.
+
+
+
+
+
+
+
+
+
+TASK 10 
+Bir Contact (Əlaqə) sinifi yaradın və məlumatların düzgünlüyünü yoxlayan setter metodlarını yazın.
+ Tələblər:
+Contact adlı bir sinif yaradın.
+Bu sinifin aşağıdakı özəl (private) atributları olsun:
+__name – şəxsin adı
+__phone_number – şəxsin telefon nömrəsi
+Hər iki atribut üçün aşağıdakı metodları yazın:
+Getter metodları (get_name(), get_phone_number())
+Setter metodları (set_name(name), set_phone_number(phone_number))
+Setter metodları bu şərtlərə cavab verməlidir:
+set_name(name) metodu:
+Yalnız boş olmayan və sətir (string) tipində olan adları qəbul etməlidir.
+Əks halda print("Xəta: Zəhmət olmasa adı düzgün daxil edin.") mesajı verilməlidir.
+set_phone_number(phone_number) metodu:
+Yalnız rəqəmlərdən ibarət (isdigit()) və boş olmayan telefon nömrələrini qəbul etməlidir.
+Əks halda print("Xəta: Telefon nömrəsi yalnız rəqəmlərdən ibarət olmalıdır.") mesajı verilməlidir.
+Nümunə İstifadə:
+contact = Contact()
+contact.set_name("Elvin")               # Doğru daxil edilmə
+contact.set_phone_number("123456789")   # Doğru daxil edilmə
+print(f"Ad: {contact.get_name()}")      # Çap: Ad: Elvin
+print(f"Telefon: {contact.get_phone_number()}")  # Çap: Telefon: 123456789
+contact.set_name("")                    # Xəta mesajı: adı düzgün daxil edin
+contact.set_phone_number("abc123")      # Xəta mesajı: telefon nömrəsi yalnış
+
+
+
+
+
+TASK 11
+Bir ana sinifdən (Animal) miras alan alt siniflər (Dog, Cat) yaradaraq, OOP-də mirasın necə işlədiyini praktiki olaraq başa düşmək.
+Şərtlər:
+Animal adlı bir ana sinif (base class) yaradın:
+name adlı atributu olsun
+speak() adlı metod olsun → Animal səs çıxarır çap etsin
+Dog və Cat adlı iki alt sinif yaradın:
+Hər biri Animal sinifindən miras alsın
+speak() metodunu özlərinə uyğun şəkildə təkrar yazsın (override etsin):
+Dog → Hav-hav
+Cat → Miyov
+Hər iki heyvandan obyekt yaradın və speak() metodunu çağırın.
+
