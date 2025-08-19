@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Zehmet olmasa dogum tarixinizi qeyd edin</h1>
+    <form method="POST">
+        <label for="dob">Dogum tarixi:</label>
+        <input type="date" name="dob" required>
+        <button type="submit">Yasini hesabla</button>
+    </form>
+
+    {% if age is not none %}
+        <h2>Yasiniz: {{age}}</h2>
+    {% endif %}
+</body>
+</html>

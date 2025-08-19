@@ -15,3 +15,6 @@ class Developer(Employe):
 
 manager = Manager("Manager layiheni idare edir")
 developer = Developer("Proqramci kod yazir")
+
+manager.work()
+developer.work()
